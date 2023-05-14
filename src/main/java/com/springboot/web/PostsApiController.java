@@ -17,4 +17,6 @@ public class PostsApiController {
     public long save(@RequestBody PostsSaveRequestDto requestDto) {
         return postsService.save(requestDto);
     }
+
+    
 }
