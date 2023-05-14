@@ -1,4 +1,4 @@
-package com.springboot.Domain;
+package com.springboot.Domain.posts;
 
 import jakarta.persistence.*;
 import lombok.Builder;
