@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @RequiredArgsConstructor
-@Controller
+@Controller //템플릿과 소통하는 컨트롤러
 public class IndexController {
 
     private final PostsService postsService;
@@ -38,10 +38,5 @@ public class IndexController {
         return "posts-update";
     }
 
-    //삭제 메소드
-    @DeleteMapping("/api/v1/posts/{id}")
-    public Long delete(@PathVariable Long id) {
-        postsService.delete(id);
-        return id;
-    }
+
 }
