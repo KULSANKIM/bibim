@@ -19,6 +19,8 @@ dependencies {
 
     runtimeOnly 'com.h2database:h2'
 
+    implementation 'org.springframework.boot:spring-boot-starter-mustache' //mustache
+
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2' //swagger (사용하면 굳이 postman 사용 안해도됨)
 
     implementation 'jakarta.platform:jakarta.jakartaee-api:9.1.0'
